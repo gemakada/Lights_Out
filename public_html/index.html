@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="js/code.js"></script>
+    <title>Lights Out</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    
+    <!-- Navigation -->
+    
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Lights Out
+                    <small>Puzzle</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn-danger" id="0_0" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="0_1" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="0_2" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="0_3" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="0_4"  style="padding-top: 30px; padding-right: 30px;" ></button>
+                        </td>
+                    
+                         
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button class="btn-danger" id="1_0" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="1_1" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="1_2" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="1_3" style="padding-top: 30px; padding-right: 30px;" ></button>
+                            <button class="btn-danger" id="1_4"  style="padding-top: 30px; padding-right: 30px;" ></button>
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button class="btn-danger" id="2_0" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="2_1" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="2_2" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="2_3" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="2_4"  style="padding-top: 30px; padding-right: 30px;"></button>
+                        </td>
+                        
+                    </tr>
+                    
+                    
+                        <tr>
+                        <td>
+                            <button class="btn-danger" id="3_0" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="3_1" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="3_2" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="3_3" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="3_4"  style="padding-top: 30px; padding-right: 30px;"></button>
+                        </td>
+                        
+                    </tr>
+                     <tr>
+                        <td>
+                            <button class="btn-danger" id="4_0" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="4_1" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="4_2" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="4_3" style="padding-top: 30px; padding-right: 30px;"></button>
+                            <button class="btn-danger" id="4_4"  style="padding-top: 30px; padding-right: 30px;"></button>
+                        </td>
+                        
+                    </tr>
+                </table>
+               
+            </div>
+            <div  class='col-md-8'>
+                <div style="padding-bottom: 10px;">
+                <button  class='btn-primary' onclick='javascript:init()'>Change</button>
+                </div>
+                
+                <div id='145'>
+                <button  class='btn-primary' onclick='javascript:Mother2()'>Solution</button>
+                
+                <script type="text/javascript">
+                            init();
+                </script>   
+                </div> 
+                 
+            </div>
+
+           
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">About</h3>
+            </div>
+
+        </p> The game consists of a 5 by 5 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on. Pressing any of the lights will toggle it and the four adjacent lights. The goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.[1]
+
+        If a light is on, it must be toggled an odd number of times to be turned off. If a light is off, it must be toggled an even number of times (including none at all) for it to remain off. Several conclusion are used for the game's strategy. Firstly, the order in which the lights are pressed does not matter, as the result will be the same.[3] Secondly, in a minimal solution, each light needs to be pressed no more than once, because pressing a light twice is equivalent to not pressing it at all.[3]</p>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
